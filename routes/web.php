@@ -44,3 +44,8 @@ Route::post('/proses_kategori','AdminController@proses_kat');
 
 Route::get('/produk/{id}','HomeController@detail');
 Route::get('/detail','HomeController@barang');
+
+Route::get('/hapus/{id}','AdminController@hapus_barang');
+
+Route::get('/edit/{id}','AdminController@edit_barang');
+Route::post('/editkuy/','AdminController@proses_edit');

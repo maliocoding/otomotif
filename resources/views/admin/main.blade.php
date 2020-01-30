@@ -11,6 +11,8 @@
   <title>RuangAdmin - Forms</title>
 
     @include('admin.resource')
+   
+    
 </head>
 
 <body id="page-top">
@@ -87,7 +89,7 @@
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
             <span>copyright &copy; 2020 - developed by
-              <b><a href="https://indrijunanda.gitlab.io/" target="_blank">maliocoding</a></b>
+              <b><a href="http://amaljulio.com" target="_blank">maliocoding</a></b>
             </span>
           </div>
         </div>
@@ -106,3 +108,23 @@
 </body>
 
 </html>
+<script type="text/javascript">
+        $('.hapus').click(function () {
+                            console.log('oi bang');
+                                var postId = $(this).data('id'); 
+                                swal({
+                                    title: "are u sure?",
+                                    text: "tes",
+                                    type: "error",
+                                    showCancelButton: true,
+                                    confirmButtonClass: 'btn-danger waves-effect waves-light',
+                                    confirmButtonText: "Delete",
+                                    cancelButtonText: "Cancel",
+                                    closeOnConfirm: true,
+                                    closeOnCancel: true
+                                },
+                                function(){
+                                    window.location.href = "edit/" + postId;
+                                });
+                                   }); 
+</script>
