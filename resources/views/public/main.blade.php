@@ -4,12 +4,26 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Nama Toko</title>
-    <meta name="description" content="">
+    <title>RBA VARIASI | Aksesoris - Variasi - Kaca Film - Cover Jok - Audio</title>
+    <meta name="description" content="Toko aksesoris mobil,variasi, cover jok, audio, pemasangan kaca film, dll di Bandung dan Kabupaten Bandung, Jl. Kopo No.538, Margasuka, Kec. Babakan Ciparay, Kota Bandung, Jawa Barat 40225, telp: 0821-1784-1712  ">
+    <meta name="keywords" content="rbavariasi, rba variasi, aksesoris mobil, variasi, car accessories, kaca film, bandung">
+    <meta name="author" content="maliocoding">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="STGcKmtuPwDjy18BPGf7uHGdeo1vFefxZzeQUnF0xEQ" />
     <!-- Favicon -->
    
     @include('public.css')
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157838483-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-157838483-1');
+        </script>
+
 
 </head>
 
@@ -33,15 +47,15 @@
                 <div class="row align-items-center">
                     <div class="col-lg-3 col-md-6">
                         <div class="logo">
-                            <a href="index.html"><img src="{{asset('myotto\assets\img\logo\logo.png')}}" alt=""></a>
+                            <a href="{{url('/')}}"><img src="{{asset('myotto\assets\img\logo\logo.png')}}" alt=""></a>
                         </div>
                     </div>
                     <div class="col-lg-9 col-md-6">
                         <div class="middel_right">
                             <div class="search-container">
-                                <form action="#">
+                                <form action="{{url('/cari')}}" method="GET">
                                     <div class="search_box">
-                                        <input placeholder="Search entire store here ..." type="text">
+                                        <input placeholder="Cari produk"  type="text" name="cari" type="text" value="{{ old('cari') }}">
                                         <button type="submit"><i class="ion-ios-search-strong"></i></button>
                                     </div>
                                 </form>
@@ -71,7 +85,7 @@
                                 <ul>
                                     <li><a href="{{url('/')}}">home</i></a></li>
                                    
-                                    <li><a href="{{url('/kontak')}}"> Contact Us</a></li>
+                                    <li id="kontak"><a href="#"> Contact Us</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -105,10 +119,10 @@
 
                       
                         <div class="search-container">
-                            <form action="#">
+                             <form action="{{url('/cari')}}" method="GET">
                                 <div class="search_box">
-                                    <input placeholder="Search entire store here ..." type="text">
-                                    <button type="submit"><i class="ion-ios-search-strong"></i></button>
+                                     <input placeholder="Cari produk"  type="text" name="cari" type="text" value="{{ old('cari') }}">
+                                        <button type="submit"><i class="ion-ios-search-strong"></i></button>
                                 </div>
                             </form>
                         </div>
@@ -177,7 +191,7 @@
     </section>
     <!--call to action end-->
     <!--footer area start-->
-    <footer class="footer_widgets">
+    <footer class="footer_widgets" id="contac">
         <div class="container">
             <div class="footer_top">
                 <div class="row">
@@ -189,12 +203,12 @@
                             <div class="footer_contact">
                                 <p>We are a team of designers and developers that
                                     create high quality Magento, Prestashop, Opencart...</p>
-                                <p><span>Alamat Kami</span> Jl. Kopo No.536, Margasuka, Kec. Babakan Ciparay, Kota Bandung, Jawa Barat 40225 <strong>(Sebelah Geprek Bensu)</strong></p>
-                                <p><span>Kontak Kami</span>Telp: <a href="tel:1-800-345-6789">1-800-345-6789</a></p>
+                                <p><span>Alamat Kami</span> Jl. Kopo No.538, Margasuka, Kec. Babakan Ciparay, Kota Bandung, Jawa Barat 40225 <strong>(Sebelah Geprek Bensu)</strong></p>
+                                <p><span>Kontak Kami</span>Telp: <a href="tel:0821-1784-1712">0821-1784-1712</a></p>
                             </div>
                         </div>
                         <div class="map-responsive">
-                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2159.456551599693!2d107.58232192935469!3d-6.954837259624841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbb4006b8660382e9!2sGeprek%20Bensu%20Kopo!5e0!3m2!1sid!2sid!4v1579849546164!5m2!1sid!2sid" width="1200" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1980.2310367770533!2d107.58229165800903!3d-6.9546932987438606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e90e74af88eb%3A0xe2c913561cf85704!2sRBA%20Variasi!5e0!3m2!1sid!2sid!4v1580818382163!5m2!1sid!2sid" width="1200" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                          </div>
                     </div>
                     </div>
@@ -207,7 +221,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-6">
                         <div class="copyright_area" align="middle">
-                            <p>Copyright &copy; 2019 <a href="#">Autima</a> All Right Reserved.</p>
+                            <p>Copyright &copy; 2020 <a href="http://amaljulio.com" target="_blank">maliocoding</a> All Right Reserved.</p>
                         </div>
                     </div>
                    
@@ -215,21 +229,20 @@
             </div>
         </div>
     </footer>
-    <!--footer area end-->
-<script type="text/javascript">
 
-</script>
-
-    <!-- modal area start-->
- 
-
-    <!-- modal area end-->
 
 <!-- JS
 ============================================ -->
  @include('public.javascript')
 
+<script type="text/javascript">
+    $("#kontak").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#contac").offset().top
+    }, 2000);
+});
 
+</script>
 </body>
 
 </html>

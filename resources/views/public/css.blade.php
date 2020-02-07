@@ -1,5 +1,5 @@
 <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{asset('myotto\assets\img\favicon.bin')}}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('myotto\assets\img\fav.png')}}">
 
      <!-- CSS 
     ========================= -->

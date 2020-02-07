@@ -10,7 +10,7 @@
                     <!--shop wrapper start-->
                     <!--shop toolbar start-->
                     <div class="d-none d-md-block shop_banner">
-                        <img src="{{url('myotto\assets\img\bg\banner8.jpg')}}" alt="">
+                        <img src="{{url('myotto\assets\img\bg\banner.jpg')}}" alt="">
                     </div>
                     <div class="shop_title">
                         <h1>shop</h1>
@@ -24,9 +24,9 @@
 
                             <button data-role="grid_list" type="button" class="btn-list" data-toggle="tooltip" title="List"></button>
                         </div>
-                        <div class=" niceselect_option">
+                       <!--  <div class=" niceselect_option">
 
-                          <!--   <form class="select_option" action="#">
+                            <form class="select_option" action="#">
                                 <select name="orderby" id="short">
 
                                     <option selected="" value="1">Sort by average rating</option>
@@ -36,10 +36,10 @@
                                     <option value="5">Sort by price: high to low</option>
                                     <option value="6">Product Name: Z</option>
                                 </select>
-                            </form> -->
+                            </form>
 
 
-                        </div>
+                        </div> -->
                         <div class="page_amount">
                             <p>Showing {{ $barang->currentPage() }} – {{$barang->perPage()}} of {{ $barang->total() }} results</p>
                         </div>
@@ -135,7 +135,7 @@
                     <aside class="sidebar_widget">
                     <div class="d-none d-md-block widget_inner">
                         <div class="shop_sidebar_banner">
-                            <a href="#"><img src="{{url('myotto\assets\img\bg\banner9.jpg')}}" alt=""></a>
+                            <a href="#"><img src="{{url('myotto\assets\img\bg\banner-side.jpg')}}" alt=""></a>
                         </div>
                     </div>
 

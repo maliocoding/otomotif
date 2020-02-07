@@ -19,6 +19,15 @@ class HomeController extends Controller
 
     }
 
+     public function search(Request $req)
+    {
+
+         $barang = DB::table('v_barang')->where('nama_barang','like',"%".$req->cari."%")->orderBy('id', 'desc')->paginate(8);
+         $kategori= kategori::get();
+        return view('public.home',['barang'=>$barang, 'kategori'=>$kategori]);
+        
+    }
+
      public function barang(){
     	return view('public.product_detail');
     }

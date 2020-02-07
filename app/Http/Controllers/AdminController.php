@@ -45,6 +45,8 @@ class AdminController extends Controller
 
     }
 
+   
+
 
     public function json_barang(){
      

@@ -49,3 +49,5 @@ Route::get('/hapus/{id}','AdminController@hapus_barang');
 
 Route::get('/edit/{id}','AdminController@edit_barang');
 Route::post('/editkuy/','AdminController@proses_edit');
+
+Route::get('/cari','HomeController@search');

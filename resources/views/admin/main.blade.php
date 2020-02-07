@@ -28,7 +28,7 @@
             <i class="fa fa-bars"></i>
           </button>
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown no-arrow">
+           <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-search fa-fw"></i>
@@ -108,6 +108,7 @@
 </body>
 
 </html>
+ <script src="{{ asset('RuangAdmin/js/ruang-admin.min.js') }}"></script>
 <script type="text/javascript">
         $('.hapus').click(function () {
                             console.log('oi bang');
